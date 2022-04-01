@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     console.clear();
 
-    const sections = gsap.utils.toArray(sect);
+    const sections = gsap.utils.toArray(".slide");
     const images = gsap.utils.toArray(".image").reverse();
     const slideImages = gsap.utils.toArray(".slide__img");
     const outerWrappers = gsap.utils.toArray(".slide__outer");
@@ -157,7 +157,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <section class="slide" ref={sect}>
+      <section class="slide">
         <div class="slide__outer">
           <div class="slide__inner">
             <div class="slide__content">
@@ -176,7 +176,7 @@ function App() {
         </div>
       </section>
 
-      <section class="slide" ref={sect}>
+      <section class="slide">
         <div class="slide__outer">
           <div class="slide__inner">
             <div class="slide__content">
@@ -195,7 +195,7 @@ function App() {
         </div>
       </section>
 
-      <section class="slide" ref={sect}>
+      <section class="slide">
         <div class="slide__outer">
           <div class="slide__inner">
             <div class="slide__content">
@@ -214,7 +214,7 @@ function App() {
         </div>
       </section>
 
-      <section class="slide" ref={sect}>
+      <section class="slide">
         <div class="slide__outer">
           <div class="slide__inner">
             <div class="slide__content">
